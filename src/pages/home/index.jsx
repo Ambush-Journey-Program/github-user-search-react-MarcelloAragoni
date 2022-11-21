@@ -1,9 +1,7 @@
-import Button from "../../components/button/Button.jsx"
+import Icons from "../../components/icons/Icons.jsx"
 
 export default function Home(){
   return(
-    <Button>
-      Search
-    </Button>
+    <Icons src='icon-company.svg' alt='company image'/>
   )
 }
