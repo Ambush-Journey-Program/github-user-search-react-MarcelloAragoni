@@ -1,0 +1,14 @@
+@import '../../root.scss';
+
+.button {
+  width: 6.625rem;
+  height: 3.125rem;
+  align-self: center;
+  background-color: $blue;
+  border-radius: 0.5rem;
+  border: none;
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}

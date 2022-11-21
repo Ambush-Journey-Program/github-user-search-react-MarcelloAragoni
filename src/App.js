@@ -1,8 +1,8 @@
+import Home from "./pages/home/index.jsx";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Home />
   );
 }
 
