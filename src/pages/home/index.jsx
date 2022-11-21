@@ -1,4 +1,4 @@
-import Icons from "../../components/icons/Icons.jsx"
+import Icons from "../../components/icons/"
 
 export default function Home(){
   return(
