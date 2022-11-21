@@ -1,7 +1,7 @@
 import './input.scss'
 
-export default function Input({placeHolder}){
+export default function SearchInput(){
   return(
-    <input class='input--Search'  type="text" placeholder={placeHolder}/>
+    <input class='input--Search' type='text' placeholder='Username'/>
   );
 }

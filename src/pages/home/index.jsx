@@ -1,7 +1,7 @@
-import Input from "../../components/input/Input.jsx"
+import SearchInput from "../../components/input"
 
 export default function Home(){
   return(
-    <Input placeHolder='Username' />
+    <SearchInput />
   )
 }
