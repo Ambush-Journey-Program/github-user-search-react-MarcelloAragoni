@@ -1,9 +1,7 @@
-import Button from "../../components/button/Button.jsx"
+import SearchInput from "../../components/input"
 
 export default function Home(){
   return(
-    <Button>
-      Search
-    </Button>
+    <SearchInput />
   )
 }
