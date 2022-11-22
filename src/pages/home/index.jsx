@@ -1,7 +1,7 @@
-import Icons from "../../components/icons/"
+import SearchBar from "../../components/search-bar/"
 
 export default function Home(){
   return(
-    <Icons src='icon-company.svg' alt='company image'/>
+    <SearchBar />
   )
 }

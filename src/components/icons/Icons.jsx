@@ -1,10 +1,10 @@
 
-import './icons.scss';
+import './style.scss';
 
 export default function Icons({src,alt}){
   const imageSource = `../../images/${src}`
-  
+
   return(
-    <img src={imageSource} alt={alt} />
+    <img class='icon' src={imageSource} alt={alt} />
   );
 }
