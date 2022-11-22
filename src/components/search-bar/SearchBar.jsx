@@ -1,7 +1,7 @@
-import './searchbar.scss';
+import './style.scss';
 import Button from '../button/';
 import Icons from '../icons/';
-import SearchInput from '../searchinput/'
+import SearchInput from '../search-input/'
 
 export default function SearchBar(){
   return(
