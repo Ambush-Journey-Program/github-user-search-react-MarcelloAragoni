@@ -1,0 +1,29 @@
+@import '../../root.scss';
+
+.search--bar{
+    width: 45.625rem;
+    height: 4.3125rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: $darkblue;
+    border-radius: 1rem;
+    align-items: center;
+    font-size: 18px;
+    line-height: 25px;
+
+    .icon{
+      margin-left: 2rem;
+      height: 35px;
+      width: 35px;
+    }
+
+    .input--Search{
+      margin: 0 1rem;
+      flex: 8;
+    }
+
+    .button {
+      margin-right: 2rem;
+    }
+}
