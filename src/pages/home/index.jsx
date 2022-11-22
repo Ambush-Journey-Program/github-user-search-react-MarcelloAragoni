@@ -1,7 +1,7 @@
-import Icons from "../../components/icons/"
+import Links from "../../components/links/"
 
 export default function Home(){
   return(
-    <Icons src='icon-company.svg' alt='company image'/>
+    <Links url='teste.com'>@github</Links>
   )
 }
