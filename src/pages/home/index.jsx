@@ -1,7 +1,7 @@
-import SearchInput from "../../components/input"
+import Icons from "../../components/icons/"
 
 export default function Home(){
   return(
-    <SearchInput />
+    <Icons src='icon-company.svg' alt='company image'/>
   )
 }
