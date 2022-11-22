@@ -1,7 +1,7 @@
-import Links from "../../components/links/"
+import LinkBox from "../../components/link-box/"
 
 export default function Home(){
   return(
-    <Links url='teste.com'>@github</Links>
+    <LinkBox></LinkBox>
   )
 }
