@@ -1,7 +1,7 @@
-import SearchBar from "../../components/search-bar/"
+import Links from "../../components/links/"
 
 export default function Home(){
   return(
-    <SearchBar />
+    <Links url='teste.com'>@github</Links>
   )
 }
