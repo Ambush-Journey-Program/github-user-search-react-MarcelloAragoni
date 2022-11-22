@@ -1,0 +1,21 @@
+.linkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &--left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &--links {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+
+    .search--links {
+      margin-left: 0.5rem;
+    }
+  }
+}
