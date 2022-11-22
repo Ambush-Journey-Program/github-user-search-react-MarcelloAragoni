@@ -1,4 +1,4 @@
-import './links.scss';
+import './style.scss';
 
 export default function Links({url,children}){
   return(
