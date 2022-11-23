@@ -1,33 +1,32 @@
-import './style.scss';
+import { formatSimpleLabel } from "../../utilities/string-helper";
 import Links from "../links/";
 import Icons from "../icons/";
+import './style.scss';
+
 
 export default function LinkBox({city, blog, twitter, company}) {
-  const Fcity = city ? city : 'Not defined';
-  const Fblog = blog ? blog : 'Not defined';
-  const Ftwitter = twitter ? twitter : 'Not defined';
-  const Fcompany = company ? company : 'Not defined';
+  const twitterUrl = twitter ? 'https://twitter.com/${twitter}' : 'https://twitter.com/';
 
   return (
     <div className="linkbox">
       <div className="linkbox--left">
         <div className="linkbox--links">
           <Icons src="icon-location.svg" alt="location icon" />
-          <Links>{Fcity}</Links>
+          <Links>{formatSimpleLabel(city)}</Links>
         </div>
         <div className="linkbox--links">
           <Icons src="icon-website.svg" alt="website icon" />
-          <Links url={Fblog}>{Fblog}</Links>
+          <Links url={formatSimpleLabel(blog)}>{formatSimpleLabel(blog)}</Links>
         </div>
       </div>
       <div className="linkbox--right">
         <div className="linkbox--links">
           <Icons src="icon-twitter.svg" alt="twitter icon" />
-          <Links url={`https://twitter.com/${Ftwitter}`}>@{Ftwitter}</Links>
+          <Links url={twitterUrl}>{twitter ? `@${twitter}` : 'Not defined'}</Links>
         </div>
         <div className="linkbox--links">
           <Icons src="icon-company.svg" alt="company icon" />
-          <Links>{Fcompany}</Links>
+          <Links>{formatSimpleLabel(company)}</Links>
         </div>
       </div>
     </div>
