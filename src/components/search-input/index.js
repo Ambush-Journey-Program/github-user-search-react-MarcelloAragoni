@@ -1,2 +1,3 @@
-import Input from './SearchInput.jsx';
+import Input from './SearchInput';
+
 export default Input;
