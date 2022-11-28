@@ -1,28 +1,33 @@
-import './style.scss';
+import { formatSimpleLabel } from "../../utilities/string-helper";
 import Links from "../links/";
 import Icons from "../icons/";
+import './style.scss';
 
-export default function LinkBox() {
+
+export default function LinkBox({city, blog, twitter, company}) {
+  const twitterUrl = twitter ? 'https://twitter.com/${twitter}' : 'https://twitter.com/';
+  const formattedBlogLabel = formatSimpleLabel(blog);
+
   return (
     <div className="linkbox">
       <div className="linkbox--left">
         <div className="linkbox--links">
           <Icons src="icon-location.svg" alt="location icon" />
-          <Links>San Francisco</Links>
+          <Links>{formatSimpleLabel(city)}</Links>
         </div>
         <div className="linkbox--links">
           <Icons src="icon-website.svg" alt="website icon" />
-          <Links url='https://github.com' >https://github.blog</Links>
+          <Links url={formattedBlogLabel}>{formattedBlogLabel}</Links>
         </div>
       </div>
       <div className="linkbox--right">
         <div className="linkbox--links">
           <Icons src="icon-twitter.svg" alt="twitter icon" />
-          <Links url='https://twitter.com/marcello'>@marcello</Links>
+          <Links url={twitterUrl}>{twitter ? `@${twitter}` : 'Not defined'}</Links>
         </div>
         <div className="linkbox--links">
           <Icons src="icon-company.svg" alt="company icon" />
-          <Links>@Ambush</Links>
+          <Links>{formatSimpleLabel(company)}</Links>
         </div>
       </div>
     </div>

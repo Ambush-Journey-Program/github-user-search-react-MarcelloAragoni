@@ -1,0 +1,38 @@
+@import '../../root.scss';
+
+.user {
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--name {
+      font-size: 26px;
+      line-height: 38px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--tag {
+      font-size: 16px;
+      line-height: 24px;
+      color: $blue;
+    }
+
+    &--date {
+      font-size: 15px;
+      color: $gray;
+    }
+
+    &--bio {
+      font-size: 15px;
+      margin-top: 2.3rem;
+      margin-bottom: 1.4375rem;
+      line-height: 25px;
+      color: $gray;
+    }
+  }
+}
