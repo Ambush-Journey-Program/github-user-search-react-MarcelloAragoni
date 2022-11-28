@@ -6,6 +6,7 @@ import './style.scss';
 
 export default function LinkBox({city, blog, twitter, company}) {
   const twitterUrl = twitter ? 'https://twitter.com/${twitter}' : 'https://twitter.com/';
+  const formattedBlogLabel = formatSimpleLabel(blog);
 
   return (
     <div className="linkbox">
@@ -16,7 +17,7 @@ export default function LinkBox({city, blog, twitter, company}) {
         </div>
         <div className="linkbox--links">
           <Icons src="icon-website.svg" alt="website icon" />
-          <Links url={formatSimpleLabel(blog)}>{formatSimpleLabel(blog)}</Links>
+          <Links url={formattedBlogLabel}>{formattedBlogLabel}</Links>
         </div>
       </div>
       <div className="linkbox--right">
