@@ -1,11 +1,12 @@
-import Avatar from "../../components/avatar/"
+import PublicBox from "../../components/public-box/"
 
 export default function Home(){
 
   return(
-    <Avatar
-      src='medusa.jpeg'
-      alt='user avatar'
+    <PublicBox
+      repositoriesCount='8'
+      followerCount='3938'
+      followingCount='9'
     />
   );
 }

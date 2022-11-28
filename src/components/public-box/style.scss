@@ -1,0 +1,24 @@
+@import '../../root.scss';
+
+.public-box {
+  height: 5.3125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $bg-color;
+  border-radius: 1rem;
+  margin-bottom: 1.4375rem;
+
+  &--details {
+    font-size: 22px;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: $white;
+  }
+
+  &--title {
+    color: $gray;
+    font-size: 13px;
+  }
+}
