@@ -4,9 +4,9 @@ export default function Home(){
 
   return(
     <PublicBox
-      repositories='8'
-      follower='3938'
-      following='9'
+      repositoriesCount='8'
+      followerCount='3938'
+      followingCount='9'
     />
   );
 }

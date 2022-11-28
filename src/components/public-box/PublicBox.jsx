@@ -1,20 +1,20 @@
 import { formatSimpleLabel } from '../../utilities/string-helper';
 import "./style.scss";
 
-export default function PublicBox({repositories, follower, following}) {
+export default function PublicBox({repositoriesCount, followerCount, followingCount}) {
   return (
-    <div class='publicBox'>
+    <div className='public-box'>
       <div>
-        <span class="publicBox--title">Repos</span>
-        <p id="publicBox--repositories" class="publicBox--details">{formatSimpleLabel(repositories)}</p>
+        <span className="public-box--title">Repos</span>
+        <p id="repositories" className="public-box--details">{formatSimpleLabel(repositoriesCount)}</p>
       </div>
       <div>
-        <span class="publicBox--title">Followers</span>
-        <p id="publicBox--followers" class="publicBox--details">{formatSimpleLabel(follower)}</p>
+        <span className="public-box--title">Followers</span>
+        <p id="followers" className="public-box--details">{formatSimpleLabel(followerCount)}</p>
       </div>
       <div>
-        <span class="publicBox--title">Following</span>
-        <p id="publicBox--following" class="publicBox--details">{formatSimpleLabel(following)}</p>
+        <span className="public-box--title">Following</span>
+        <p id="following" className="public-box--details">{formatSimpleLabel(followingCount)}</p>
       </div>
     </div>
   );
