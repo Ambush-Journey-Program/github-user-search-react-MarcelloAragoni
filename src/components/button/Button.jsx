@@ -1,8 +1,8 @@
 import './style.scss';
 
-export default function Button({ children }) {
+export default function Button({ onClick, children, type = 'button' }) {
   return (
-    <button className="button" type="button">
+    <button onClick={onClick} className="button" type={type}>
       {children}
     </button>
   );
