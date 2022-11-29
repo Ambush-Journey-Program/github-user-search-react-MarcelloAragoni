@@ -10,6 +10,7 @@
     justify-content: space-between;
 
     &--name {
+      color: $white;
       font-size: 26px;
       line-height: 38px;
       display: flex;
@@ -24,6 +25,7 @@
 
     &--date {
       font-size: 15px;
+      line-height: 38px;
       color: $gray;
     }
 

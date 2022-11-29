@@ -1,5 +1,5 @@
-import PublicBox from '../../components/public-box';
+import MainBox from '../../components/main-box';
 
 export default function Home() {
-  return <PublicBox repositoriesCount="8" followerCount="3938" followingCount="9" />;
+  return <MainBox />;
 }
