@@ -6,7 +6,7 @@ import LinkBox from '../link-box';
 import './style.scss';
 
 export default function MainBox() {
-  const formatteddate = handleFormatDate('2018-03-13T12:20:43Z');
+  const formattedDate = handleFormatDate('2018-03-13T12:20:43Z');
 
   return (
     <div className="main-box">
@@ -15,7 +15,7 @@ export default function MainBox() {
         <UserBox
           user="Guilherme Kuniyoshi"
           tag="guilhermekuni"
-          date={formatteddate}
+          date={formattedDate}
           bio="Front-end Engineer with Full Stack experience. Passionate about JavaScript and the whole React ecosystem."
         />
         <PublicBox repositoriesCount="37" followerCount="33" followingCount="25" />
