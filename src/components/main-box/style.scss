@@ -1,0 +1,28 @@
+@import '../../root.scss';
+
+.main-box {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 10.3125rem 33rem;
+  grid-column-gap: 2.3125rem;
+  background-color: $bg-primary;
+  border-radius: 1rem;
+  height: 26.1875rem;
+  width: 45.625rem;
+  padding-bottom: 2rem;
+
+  &--empty {
+    display: none;
+  }
+
+  &--user {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 30rem;
+  }
+
+  .search--links {
+    color: $white;
+  }
+}

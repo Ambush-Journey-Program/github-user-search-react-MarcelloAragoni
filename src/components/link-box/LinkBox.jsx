@@ -3,9 +3,10 @@ import Links from '../links';
 import Icons from '../icons';
 import './style.scss';
 
-export default function LinkBox({ city, blog, twitter, company }) {
+export default function LinkBox({ city, blog, blogLabel, twitter, company }) {
   const twitterUrl = twitter ? `https://twitter.com/${twitter}` : 'https://twitter.com/';
-  const formattedBlogLabel = formatSimpleLabel(blog);
+  const formattedBlogUrl = formatSimpleLabel(blog);
+  const formattedBlogLabel = formatSimpleLabel(blogLabel);
 
   return (
     <div className="link-box">
@@ -16,7 +17,7 @@ export default function LinkBox({ city, blog, twitter, company }) {
         </div>
         <div className="link-box--links">
           <Icons src="icon-website.svg" alt="website icon" />
-          <Links url={formattedBlogLabel}>{formattedBlogLabel}</Links>
+          <Links url={formattedBlogUrl}>{formattedBlogLabel}</Links>
         </div>
       </div>
       <div className="link-box--right">
