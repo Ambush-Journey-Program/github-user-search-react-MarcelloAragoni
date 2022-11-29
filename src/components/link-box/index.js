@@ -1,2 +1,3 @@
-import LinkBox from './LinkBox.jsx';
+import LinkBox from './LinkBox';
+
 export default LinkBox;

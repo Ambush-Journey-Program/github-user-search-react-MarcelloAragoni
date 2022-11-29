@@ -1,2 +1,3 @@
-import PublicBox from "./PublicBox.jsx";
+import PublicBox from './PublicBox';
+
 export default PublicBox;

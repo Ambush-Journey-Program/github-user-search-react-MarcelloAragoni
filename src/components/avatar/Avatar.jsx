@@ -1,9 +1,7 @@
 import './style.scss';
 
-export default function Avatar({src, alt}){
+export default function Avatar({ src, alt }) {
   const avatarSource = `../../images/${src}`;
 
-  return (
-    <img class='avatar' src={avatarSource} alt={alt} />
-  );
+  return <img className="avatar" src={avatarSource} alt={alt} />;
 }

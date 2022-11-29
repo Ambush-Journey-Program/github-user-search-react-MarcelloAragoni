@@ -1,2 +1,3 @@
-import Links from './Links.jsx';
+import Links from './Links';
+
 export default Links;

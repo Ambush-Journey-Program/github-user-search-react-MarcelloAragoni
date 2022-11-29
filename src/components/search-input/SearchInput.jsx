@@ -1,7 +1,5 @@
-import './style.scss'
+import './style.scss';
 
-export default function SearchInput(){
-  return(
-    <input class='input--Search' type='text' placeholder='Username'/>
-  );
+export default function SearchInput() {
+  return <input className="input--Search" type="text" placeholder="Username" />;
 }
