@@ -5,17 +5,17 @@ import SearchInput from '../search-input';
 import './style.scss';
 
 export default function SearchBar({ onSubmit }) {
-  const [inputState, setInputState] = useState('');
+  const [searchValue, setSearchValue] = useState('');
 
   function handleSubmit(event) {
     event.preventDefault();
-    onSubmit(inputState);
+    onSubmit(searchValue);
   }
 
   return (
     <form onSubmit={handleSubmit} className="search--bar">
       <Icons src="icon-search.svg" alt="search icon" />
-      <SearchInput setInputState={setInputState} value={inputState} />
+      <SearchInput setInputState={setSearchValue} value={searchValue} />
       <Button type="submit">Search</Button>
     </form>
   );

@@ -5,7 +5,11 @@ import PublicBox from '../public-box';
 import LinkBox from '../link-box';
 import './style.scss';
 
-export default function MainBox({ details = '' }) {
+export default function MainBox({ details }) {
+  if (!details) {
+    return null;
+  }
+
   const formattedDate = handleFormatDate(details.created_at);
 
   return (

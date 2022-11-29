@@ -20,7 +20,6 @@
     "react/prop-types": "off",
     "import/prefer-default-export": "off",
     "react/jsx-no-bind": "off",
-    "no-unused-vars": "off",
     "react/button-has-type": "off"
   }
 }
