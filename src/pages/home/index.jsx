@@ -8,11 +8,11 @@ import './style.scss';
 export default function Home() {
   const [userResponse, setUserResponse] = useState();
 
-  async function handleGetUser(username) {
+  const handleGetUser = async (username) => {
     const responseJson = await getUserDetails(username);
     setUserResponse(responseJson);
     handleAddClass('mainbox', 'main-box--empty');
-  }
+  };
 
   return (
     <div className="home">

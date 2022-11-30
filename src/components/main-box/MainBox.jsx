@@ -6,27 +6,28 @@ import LinkBox from '../link-box';
 import './style.scss';
 
 export default function MainBox({ details }) {
-  if (!details) {
-    return null;
-  }
-
-  const formattedDate = handleFormatDate(details.created_at);
+  const formattedDate = handleFormatDate(details?.created_at);
 
   return (
     <div id="mainbox" className="main-box main-box--empty">
-      <Avatar src={details.avatar_url} />
+      <Avatar src={details?.avatar_url} />
       <div className="main-box--user">
-        <UserBox user={details.name} tag={details.login} date={formattedDate} bio={details.bio} />
+        <UserBox
+          user={details?.name}
+          tag={details?.login}
+          date={formattedDate}
+          bio={details?.bio}
+        />
         <PublicBox
-          repositoriesCount={details.public_repos}
-          followerCount={details.followers}
-          followingCount={details.following}
+          repositoriesCount={details?.public_repos}
+          followerCount={details?.followers}
+          followingCount={details?.following}
         />
         <LinkBox
-          city={details.location}
-          blog={details.blog}
-          blogLabel={details.login}
-          company={details.company}
+          city={details?.location}
+          blog={details?.blog}
+          blogLabel={details?.login}
+          company={details?.company}
         />
       </div>
     </div>
