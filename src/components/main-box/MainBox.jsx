@@ -5,25 +5,29 @@ import PublicBox from '../public-box';
 import LinkBox from '../link-box';
 import './style.scss';
 
-export default function MainBox() {
-  const formattedDate = handleFormatDate('2018-03-13T12:20:43Z');
+export default function MainBox({ details }) {
+  const formattedDate = handleFormatDate(details?.created_at);
 
   return (
-    <div className="main-box">
-      <Avatar src="medusa.jpeg" />
+    <div id="mainbox" className="main-box main-box--empty">
+      <Avatar src={details?.avatar_url} />
       <div className="main-box--user">
         <UserBox
-          user="Guilherme Kuniyoshi"
-          tag="guilhermekuni"
+          user={details?.name}
+          tag={details?.login}
           date={formattedDate}
-          bio="Front-end Engineer with Full Stack experience. Passionate about JavaScript and the whole React ecosystem."
+          bio={details?.bio}
         />
-        <PublicBox repositoriesCount="37" followerCount="33" followingCount="25" />
+        <PublicBox
+          repositoriesCount={details?.public_repos}
+          followerCount={details?.followers}
+          followingCount={details?.following}
+        />
         <LinkBox
-          city="Araraquara, SP - Brasil"
-          blog="https://github.com/users/guilhermekuni"
-          blogLabel="guilhermekuni"
-          company="Ambush"
+          city={details?.location}
+          blog={details?.blog}
+          blogLabel={details?.login}
+          company={details?.company}
         />
       </div>
     </div>
